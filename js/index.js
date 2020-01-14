@@ -52,3 +52,7 @@ header.addEventListener('dblclick', event => {
     console.log('mouseovered');
     header.style.backgroundColor = 'red' ;
 })
+
+window.addEventListener('load', (event) => {
+    alert('page is fully loaded');
+  });
