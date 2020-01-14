@@ -5,6 +5,9 @@ nav.addEventListener('mouseover', event => {
     nav.style.backgroundColor = 'red' ;
 })
 
+document.querySelector('.nav').addEventListener('click', event => {
+    preventDefault();
+});
 
 const body = document.querySelector('body');
 let i = 0;
