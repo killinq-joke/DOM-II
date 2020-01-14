@@ -15,6 +15,7 @@ document.addEventListener('keydown', event => {
     } else {
         body.style.backgroundColor = 'pink';
     }
+    event.stopPropagation();
     i++
 })
 
@@ -29,6 +30,7 @@ const header = document.querySelector('header');
 window.addEventListener('resize', event => {
     console.log('resized');
     header.style.backgroundColor = 'orange' ;
+    event.stopPropagation();
 })
 
 window.addEventListener('scroll', event => {
