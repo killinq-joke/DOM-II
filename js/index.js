@@ -47,3 +47,8 @@ text.addEventListener('select', event => {
     text.style.width = '420px' ;
     text.style.color = 'red' ;
 })
+
+header.addEventListener('dblclick', event => {
+    console.log('mouseovered');
+    header.style.backgroundColor = 'red' ;
+})
