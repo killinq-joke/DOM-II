@@ -22,5 +22,11 @@ const password = document.querySelector('input[type="password"]');
 console.log(password);
 password.addEventListener('focus', event => {
     console.log('focused');
-    nav.style.backgroundColor = 'blue' ;
+    password.style.backgroundColor = 'blue' ;
+})
+
+const header = document.querySelector('header');
+window.addEventListener('resize', event => {
+    console.log('resizeed');
+    header.style.backgroundColor = 'orange' ;
 })
