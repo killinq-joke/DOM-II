@@ -27,11 +27,16 @@ password.addEventListener('focus', event => {
 
 const header = document.querySelector('header');
 window.addEventListener('resize', event => {
-    console.log('resizeed');
+    console.log('resized');
     header.style.backgroundColor = 'orange' ;
 })
 
 window.addEventListener('scroll', event => {
-    console.log('resizeed');
+    console.log('scrolled');
     header.style.backgroundColor = 'gray' ;
+})
+
+document.addEventListener('wheel', event => {
+    console.log('wheeled');
+    document.querySelector('.logo-heading').style.fontSize = '50px' ;
 })
