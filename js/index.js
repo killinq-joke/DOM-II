@@ -55,4 +55,11 @@ header.addEventListener('dblclick', event => {
 
 window.addEventListener('load', (event) => {
     alert('page is fully loaded');
-  });
+  })
+
+const img = document.querySelector('img');
+console.log(img);
+img.addEventListener('drag', event => {
+    console.log('dragged');
+    header.style.backgroundColor = 'blue' ;
+} ,false)
