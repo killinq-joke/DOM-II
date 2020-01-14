@@ -30,3 +30,8 @@ window.addEventListener('resize', event => {
     console.log('resizeed');
     header.style.backgroundColor = 'orange' ;
 })
+
+window.addEventListener('scroll', event => {
+    console.log('resizeed');
+    header.style.backgroundColor = 'gray' ;
+})
