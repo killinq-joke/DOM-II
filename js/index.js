@@ -40,3 +40,10 @@ document.addEventListener('wheel', event => {
     console.log('wheeled');
     document.querySelector('.logo-heading').style.fontSize = '50px' ;
 })
+
+const text = document.querySelector('input[type=text]');
+text.addEventListener('select', event => {
+    console.log('selected');
+    text.style.width = '420px' ;
+    text.style.color = 'red' ;
+})
